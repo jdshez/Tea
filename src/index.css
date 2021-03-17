@@ -1,0 +1,241 @@
+body {
+  margin: 0;
+  font-family: 'Sofia Pro', Helvetica, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* NAV BAR */
+
+.nav {
+  background-color: #cc0;
+}
+
+.nav-wrapper {
+  /*padding: 1rem 2.2rem 1rem 1.2rem;*/
+}
+
+.logo {
+  width: 140px;
+}
+
+.box {
+  content: "";
+  padding-top: 50rem;
+  height: 100em;
+}
+
+/* HOME */
+
+.hero-1 {
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-txt-ctr {
+  background: linear-gradient(to right, rgb(45, 144, 160) 0%, rgb(49, 157, 170) 25%, rgb(53, 169, 180) 50%, rgb(58, 180, 195) 75%, rgb(63, 185, 200) 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-text  {
+  max-width: 300px;
+  margin: 3em 0 5em 0;
+}
+
+.hero-text h2 {
+  font-size: 2.2rem;
+}
+
+.hero-text p {
+  font-size: 1.7rem;
+  font-weight: 100;
+  font-family: 'Sofia Pro Light', Helvetica;
+  margin-bottom: 2em;;
+}
+
+.hero-text a {
+  font-size: 1.2rem;
+  border: 2px solid #fff;
+  padding: .5em 1.5em;
+  text-transform: uppercase;
+  color:#fff;
+}
+
+@media screen and (min-width: 993px) {
+  .hero-text {
+    position: absolute;
+    top: 2rem;
+    right: .5rem;
+    color:#fff;
+    max-width:600px;
+  }
+
+  .hero-text h2 {
+    font-size: 4em;;
+  }
+}
+
+
+/* CAROUSEL SECTION */
+
+.carousel-1 {
+  background-color: #4db794; 
+}
+
+
+/* FEATURE SECTION 1*/
+
+.feature-1 {
+  display: flex;
+  background-color: #ff7544;
+  
+  /*margin: 0 auto;
+  width: 100%;*/
+  padding: 9em 0 5em 0;
+}
+
+.drink-title-ctr {
+  background-color: #ff7544;
+  padding: 1em 1.5em;
+  /*position: relative;*/
+  /*display: flex;*/
+}
+
+.drink-call::before {
+  content: "";
+  position:absolute;
+  width: 2rem;
+  height: 6px;
+  background-color: #ff3300;
+}
+
+.drink-call {
+  color:#fff;
+  position: relative;
+  z-index: 10
+}
+
+.drink-call h5 {
+  margin-bottom: 1.5em;
+  font-size: 2em;
+}
+
+.drink-call i {
+  border: 1px solid #fff;
+
+}
+
+.drink-img-ctr {
+  position: relative;
+  right:0;
+  /*max-width: 250px;*/
+}
+
+.fruit {
+  position: absolute;
+  max-width: 3em;
+  transform: perspective(500px) translate3d(10%, -10%, 100px);
+  
+  
+}
+
+.drink-pic{
+  padding-right: 1.5rem;
+  width:100%;
+}
+
+.fruit.mango {
+  bottom: 1em;
+  right: 1.5em;
+}
+
+.pineapple {
+  top: -50px;
+  bottom: 200px;
+}
+
+@media screen and (min-width: 450px) {
+  .drink-call h5 {
+      margin-bottom: 1.5em;
+      font-size: 3rem;
+  }
+  .drink-title-ctr {
+  padding-bottom: 9em;
+  padding-top: 2em;
+  margin-bottom: auto;
+  margin-top: auto ;
+  }
+
+  .pineapple {
+    top:-50;
+    bottom: 250px;
+  }
+
+  .fruit {
+    max-width: 4em;
+  }
+}
+
+@media screen and (min-width: 650px) {
+
+  .drink-call h5 {
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    max-width: 300px;
+  }
+
+  .drink-title-ctr {
+    padding-top: 1em;
+    padding-bottom: 3em ;
+    margin-left:50px;
+  }
+
+  .fruit {
+    max-width: 5em;
+  }
+
+  .drink-img-ctr {
+    position: relative;
+    right:0;
+    max-width: 420px;
+  }
+
+}
+
+@media screen and (min-width: 990px) {
+  .drink-img-ctr {
+    margin: 2rem 8rem 0 8rem;
+  }
+  .drink-call h5{
+    font-size: 6rem;
+    margin-bottom: 4rem;
+  }
+
+  .fruit {
+    max-width: 6em;
+  }
+  .fruit.pineapple{
+    top: -70px;
+    right:380px
+  }
+
+  .drink-title-ctr {
+    padding-bottom: 0;
+    padding-top: 2.5rem;
+    max-height: 330px;
+  }
+
+  .feature-1 {
+    justify-content: center;
+  }
+}
+
+
+
+
+
